@@ -4,6 +4,7 @@ import { motion, useAnimation, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useEffect } from "react";
 
+
 const navVar = {
   top: {
     backgroundColor: "rgba(0,0,0,0)",
@@ -14,13 +15,13 @@ const navVar = {
 };
 
 const ScrollUp = {
-    top: {
-      opacity: "0",
-    },
-    scroll: {
-        opacity: "1",
-    },
-  };
+  top: {
+    opacity: "0",
+  },
+  scroll: {
+    opacity: "1",
+  },
+};
 
 export default function Layout() {
   const router = useRouter();
@@ -29,15 +30,15 @@ export default function Layout() {
   const buttonAnimation = useAnimation();
   const scrollToTop = () => {
     window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-}
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   useEffect(() => {
     scrollY.onChange(() => {
       if (scrollY.get() > 80) {
         navAnimation.start("scroll");
-        buttonAnimation.start("scroll")
+        buttonAnimation.start("scroll");
       } else {
         navAnimation.start("top");
         buttonAnimation.start("top");
@@ -62,7 +63,7 @@ export default function Layout() {
           </Link>
           <div className="flex justify-between lg:text-lg text-sm items-center text-white lg:space-x-10 space-x-8">
             <Link
-              href="/"
+              href="/price"
               className={cls(
                 "flex flex-col items-center space-y-2 ",
                 router.pathname === "/price"
@@ -96,36 +97,20 @@ export default function Layout() {
             </Link>
           </div>
         </motion.nav>
-        {router.pathname === "/" ? (
-          <div className="bg-black h-[80rem] pt-44">
-            <h1 className="text-white lg:text-6xl text-xl lg:px-24 px-16">
-              Ultra-quality lossless <br /> born out of extreme simplicity.
-            </h1>
-            <p className="text-white lg:text-2xl text-xs lg:px-24 px-16">
-              Upgrade and add dignity to your content with professional and
-              stylish <br />
-              Wound work for a price of a cup of coffee for a whole month.
-            </p>
-            <div className="flex justify-center items-center lg:my-24 my-16">
-              <button className="border border-white lg:text-lg text-sm outline-offset-[2rem] transition-all outline-[#59c6f8] text-white rounded-full aspect-square lg:p-9 p-5 hover:outline hover:border-[#59c6f8] hover:text-[#59c6f8] lg:hover:text-xl hover:text-lg">
-                Get Start
-              </button>
-            </div>
-          </div>
-        ) : null}
       </div>
-      <motion.button 
-      onClick={scrollToTop}
-      variants={ScrollUp}
-      animate={buttonAnimation}
-      transition={{ duration: 0.1 }}
-      className="fixed bottom-4 right-4 text-white bg-[#59c6f8] p-3 rounded-md hover:bg-blue-400 transition">
+      <motion.button
+        onClick={scrollToTop}
+        variants={ScrollUp}
+        animate={buttonAnimation}
+        transition={{ duration: 0.1 }}
+        className="fixed bottom-4 right-4 text-white bg-[#59c6f8] p-3 rounded-md hover:bg-blue-400 transition"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="2"
-          stroke="currentColor"
+          stroke="white"
           className="lg:w-6 lg:h-6 w-4 h-4"
         >
           <path
