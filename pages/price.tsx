@@ -1,4 +1,3 @@
-import NavBar from "@/components/layout";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -8,7 +7,7 @@ interface IPriceList {
     price: string | number;
     text: string[]
 }
-
+//가격 목록 텍스트 내용
 const priceList: IPriceList[] = [
     {
         priceTitle: "Free Forever",
@@ -60,7 +59,6 @@ export default function Price() {
       <Head>
         <title>Surroundio | Price</title>
       </Head>
-      <NavBar />
       <div className="bg-black pt-44 pb-10 lg:px-24 px-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +68,7 @@ export default function Price() {
           <h1 className="text-white lg:text-6xl text-xl">
             Three payment options in a Single plan
           </h1>
-          <p className="text-white lg:text-2xl text-xs">
+          <p className="text-gray-400 lg:text-2xl text-xs">
             We provide sound functionalities and services,
             <br />
             including unlimited access to surrounding and mastering.

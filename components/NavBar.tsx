@@ -5,12 +5,12 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 
-const navVar = {
+const navVarient = {
   top: {
     backgroundColor: "rgba(0,0,0,0)",
   },
   scroll: {
-    backgroundColor: "rgba(80, 208, 255, 1)",
+    backgroundColor: "rgba(80, 208, 255, 0.9)",
   },
 };
 
@@ -23,7 +23,7 @@ const ScrollUp = {
   },
 };
 
-export default function Layout() {
+export default function NavigationBar() {
   const router = useRouter();
   const { scrollY } = useScroll();
   const navAnimation = useAnimation();
@@ -49,14 +49,15 @@ export default function Layout() {
     <>
       <div>
         <motion.nav
-          variants={navVar}
+          variants={navVarient}
           animate={navAnimation}
           transition={{ duration: 0.1 }}
           initial={"top"}
           className="fixed top-0 w-full flex lg:justify-between lg:flex-row flex-col items-center xl:px-24 lg:px-24 px-16 py-5 z-50"
         >
           <Link href="/">
-            <img
+            <motion.img
+              whileHover={{scale: 1.1}}
               src="https://surroundio.org/wp-content/uploads/2022/09/surround_logo.svg"
               className="lg:w-64 lg:mb-0 w-52 mb-6"
             />
@@ -101,6 +102,7 @@ export default function Layout() {
       <motion.button
         onClick={scrollToTop}
         variants={ScrollUp}
+        initial={{opacity: 0}}
         animate={buttonAnimation}
         transition={{ duration: 0.1 }}
         className="fixed bottom-4 right-4 text-white bg-[#59c6f8] p-3 rounded-md hover:bg-blue-400 transition"
