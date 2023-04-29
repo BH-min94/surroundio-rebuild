@@ -29,20 +29,15 @@ export default function About() {
                 className="rounded-md"
                 src="https://surroundio.org/wp-content/uploads/2022/07/about-section-img3.png"
               />
-              <motion.img
-                whileHover={{ y: -10 }}
-                className="col-span-2 mx-auto rounded-md lg:block hidden"
-                src="https://surroundio.org/wp-content/uploads/2022/07/about-section-img2.jpg"
-              />
             </div>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-white my-auto"
+              className="my-auto"
             >
-              <h1 className="lg:text-4xl text-2xl lg:mt-0 mt-8">Company Introduction</h1>
-              <p className="lg:text-lg text-xs lg:mt-6 mt-2">
+              <h1 className="lg:text-4xl text-2xl lg:mt-0 mt-8 text-white">Company Introduction</h1>
+              <p className="lg:text-lg text-xs lg:mt-6 mt-2 text-gray-400">
                 Leveraging Shutterstock`s content delivery technology, <br />
                 Surroundio combines a variety of sophisticated sound
                 technologies

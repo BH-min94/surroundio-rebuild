@@ -1,3 +1,4 @@
+//이용약관 텍스트
 interface ITerms {
   termTitle: string;
   termText: string[];
@@ -139,6 +140,224 @@ export const terms: ITerms[] = [
       "- You may not use the content as a trademark or theme song, in an audio-only capacity in which Music is the primary content, or in an international television advertising campaign with annual revenues of more than One Billion Euros.",
       "- You may not use content in connection with adult-oriented services or ads for dating services or in connection with pornographic, defamatory, unlawful, offensive or immoral content.",
       "- You may only use the content in campaigns and content created on Nationalux, and not with other website or content services.",
+    ],
+  },
+];
+
+//디지털 텍스트
+interface IDigitals {
+  digTitle: string;
+  digText: string[];
+}
+
+export const digitals: IDigitals = {
+  digTitle: "Digital",
+  digText: [
+    "- Content is for digital use within Nationalux only.",
+    "- You may not use the content as a trademark or theme song, in an audio-only capacity in which Music is the primary content, or in an international television advertising campaign with annual revenues of more than One Billion Euros.",
+    "- You may not use content in connection with adult-oriented services or ads for dating services or in connection with pornographic, defamatory, unlawful, offensive or immoral content.",
+    "- You may only use the content in campaigns and content created on Nationalux, and not with other website or content services.",
+  ],
+};
+
+//개인정보보호텍스트
+interface IPrivacies {
+  priTitle: string;
+  priText: string[];
+}
+
+export const privacies: IPrivacies[] = [
+  {
+    priTitle: "Privacy Statement",
+    priText: [
+      "Surroundio (now referred to as the 'Company') attaches great importance to protecting users' personal information and the personal information provided to the Company online. In contrast, the user uses the Company's programs and related services (from now on, referred to as the 'Service'). We are doing our best to ensure that you are protected. Accordingly, the Company complies with the relevant laws and regulations of the Republic of Korea that information and communications service providers must comply with and the rules on personal information protection and information protection. Through the personal information processing policy, the Company informs you about the purpose and method of using the personal information provided by users and what measures are being taken to protect personal information.",
+    ],
+  },
+  {
+    priTitle: "index",
+    priText: [
+      "1 Purpose of Collection and Use of personal information",
+      "2 Personal information collection items and methods",
+      "3 Consent to collection of personal information",
+      "4 Provision and sharing of personal information",
+      "5 Personal information viewing and correction",
+      "6 Period of retention and Use of personal information",
+      "7 Destruction procedures and methods of personal information",
+      "8 Consignment of personal information processing",
+      "9 Technical and administrative measures for storage and protection of personal information",
+      "10 Personal information of children under the age of 14",
+      "11 Rights of users and their legal representatives and how to exercise them",
+      "12 Matters concerning the installation, operation, and rejection of automatic personal information collection devices",
+      "13 Privacy Officer",
+      "14 Supplement",
+    ],
+  },
+  {
+    priTitle: "1. Purpose of Collection and Use of personal information",
+    priText: [
+      "Personal information refers to information about a living individual that can identify an individual user (including information that can be easily combined with other information to identify a specific individual even if the data alone cannot identify a particular individual)",
+      "Purpose of collecting personal information",
+      "The purpose of the Company collecting users' personal information is to provide optimal services to users.",
+      "The Company provides various content for free/paid services. At this time, it becomes possible to selectively offer more helpful information based on the user's personal information. To provide better service, the Company may publish advertisements. In this case, based on the user's data, it will be possible to selectively deliver ads that are valuable as more helpful information.",
+      "Use of personal information",
+      "Identity verification according to membership service Use, personal identification, prevention of illegal Use and unauthorized Use of wrong members, confirmation of intention to join, proof of legal representative information and consent when collecting personal information of children under 14 years of age, complaint handling, complaint handling, notification It may be used for information delivery, such as information delivery, other communication procedures, and events, personalized services, age-specific services, and demographic analysis."
+    ],
+  },
+  {
+    priTitle: "2. Personal information collection items and methods",
+    priText: [
+      "The Company collects a minimum amount of personal information to provide smooth service.",
+      "Minimum information may be collected when users sign up for membership (required to agree to the terms and conditions) or according to the service use process, and the details are as follows.",
+      "Personal information collection items",
+      "[When registering as a member]",
+      "- Name, ID, password, nickname, email, legal representative information (key value for personal identification) if under the age of 14",
+      "[When using the service]",
+      "- Service usage record, cookies, IP address, payment history, wrong Use record, gender, adult authentication value, event application (phone number, name, etc.), member information modification, etc.",
+      "[When reporting a post]",
+      "Personal information included in the user's inquiry/answer, a copy of the business registration card/a copy of personal identification card/power of attorney information (representative information), etc.",
+      "[Use of paid service]",
+      "- Paypal payment: name, ID/email address entered at the time of payment, payment approval number, etc.",
+      "- When paying by credit card: name, phone number/e-mail entered at the time of payment, payment approval number, etc.",
+      "- For mobile payment: name, mobile phone number, carrier, email entered at the time of payment, payment approval number, etc."
+    ],
+  },
+  {
+    priTitle: "3. Consent to collection of personal information",
+    priText: [
+      "The Company obtains consent for collecting personal information when a user registers as a member (from now on, referred to as 'member').",
+      "During the membership sign-up process, it is deemed that you have agreed to the collection of personal information by checking the box to agree to the terms of Use in the consent process.",
+      "Personal information is collected in terms of Use and individual information processing policy."
+    ],
+  },
+  {
+    priTitle: "4. Provision and Sharing of Personal Information",
+    priText: [
+      "The Company entrusts the input and collection of personal information necessary for member identification to 'NICE Rating Information Co., Ltd.' (formerly 'Korea Credit Rating Information'), and the entrusted Company manages the personal data. The Company may Use personal information beyond the scope notified in '2. Personal information collection items and collection methods' in any case, except with the consent of other members or as stipulated by law, or Use of personal information by others, other companies, or institutions is not provided to.",
+      "When the Company provides or shares a member's personal information to a third party, who will receive or transmit the member's personal information in advance, what personal information items are provided or shared, and why such personal information is shared You may go through the procedure to obtain consent by notifying individually through email or notice within the Company service about how long it should be protected and managed, or you may get approval separately when registering as a member. If the member disagrees, personal information will not be provided or shared. The same procedure will be followed to notify or seek consent when there is a change in the provisioning relationship or when the provisioning relationship is terminated.",
+      "However, in the following cases, personal information may be provided without consent in exceptional circumstances.",
+      "- By the provisions of laws and regulations, or when there is a request from the relevant agency by the procedures and methods stipulated in the statutes for investigative purposes",
+      "- When providing in a form that cannot identify individuals for statistical preparation, academic research, or market research"
+    ],
+  },
+  {
+    priTitle: "5. Personal information viewing and correction",
+    priText: [
+      "Members can view or request correction of registered members' personal information at any time. After logging in to the Company service, you can view or correct the member's personal information directly through the 'Member Information menu. If the Company requests the correction of errors in personal information, the Company will not use or provide the personal information until the sentence is completed. In addition, if incorrect personal information has already been provided to a third party, we will notify the third party of the result of the correction without delay so that the sentence can be made."
+    ],
+  },
+  {
+    priTitle: "6. Retention and Use period of personal information",
+    priText: [
+      "The Company will retain and Use the member's personal information from the date of membership registration until the withdrawal of consent to the collection, Use, and provision of personal information, such as membership withdrawal. To withdraw consent, click 'Withdraw' in the 'Member Information' menu after logging in to the Company service, and then withdraw consent according to the prescribed order.",
+      "However, the following information is stored for a specified period by internal policies and related laws and then destroyed.",
+      "1) Concerning cooperation with the investigation of related agencies against illegal users and Use, they are stored for up to 3 months and then destroyed.",
+      "- ID, nickname, name, email, the critical value for personal identification (in case of self-authentication)",
+      "- Records of using the service in an illegal/unlawful form",
+      "2) If it is necessary to keep it by the relevant laws and regulations, the Company will keep the member information for a certain period stipulated by the relevant laws as follows and then destroy it.",
+      "- User access information (IP at the time of membership registration, last access time): 3 months (Communication Secret Protection Act)",
+      "- Records on display/advertisement: 6 months (Act on Consumer Protection in Electronic Commerce, etc.)",
+      "- Issuance of withholding tax receipt through cash receipt issuance device: 1 year (Income Income Act)",
+      "- Records on the contract or subscription withdrawal: 5 years (Act on Consumer Protection in Electronic Commerce, etc.)",
+      "- Records on payment and supply of goods: 5 years (Act on Consumer Protection in Electronic Commerce, etc.)",
+      "- Records on handling consumer complaints or disputes: 3 years (Act on Consumer Protection in Electronic Commerce, etc.)"
+    ],
+  },
+  {
+    priTitle: "7. Procedure and method of destruction of personal information",
+    priText: [
+     "The Company's information destruction procedures and methods are as follows.",
+     "destruction procedure",
+     "- The information entered by the user for membership registration, etc. is moved to a separate DB after the purpose is achieved (a separate filing cabinet in the case of paper) and by internal policies and other information protection reasons according to relevant laws (retention and Use of personal information) Refer to period) It is destroyed after being stored for a certain period.",
+     "- Personal information transferred to a separate DB will not be used for any other purpose except in cases where it is required by law.",
+     "Destruction method",
+     "- Personal information stored in electronic file format will be deleted using a technical method that cannot reproduce the record.",
+     "- Personal information printed on paper is shredded with a shredder or destroyed through incineration."
+    ],
+  },
+  {
+    priTitle: "8. Consignment of personal information processing",
+    priText: [
+      "To provide services, the Company entrusts the processing of personal information to an external Company as follows. By relevant laws and regulations, the Company stipulates necessary matters so that personal data can be safely managed in the consignment contract.",
+      "[Service provider consignment Company]",
+      "Period of retention and Use of personal information for consigned business NICE Evaluation Information Co., Ltd.",
+      "Identity verification, account verification, absolute name verification service"
+    ],
+  },
+  {
+    priTitle:
+      "9. Technical and administrative measures for storage and protection of personal information",
+    priText: [
+      "Among members' personal information, other than the critical value for personal identification and the information notified in '2. Personal information collection items and collection methods' is managed by the Company by the notice in '4. Provision and sharing of personal information' do.",
+      "A password protects members' personal information. Only the user can know the password of the member account, and only the person who knows the password can check and change personal information. Therefore, the member's password should not be disclosed to anyone. Also, it is recommended to log out after completing the work and close the programs (web browsers, apps, related programs, etc.) that used the service. In particular, if you share your device (such as a PC, smartphone, tablet, etc. that can Use the service) with others or Use it in a public place, this procedure is more necessary to prevent personal information from being disclosed to others. I'll do it.",
+      "The Company limits personal information processing staff to a minimum and emphasizes compliance with this policy through frequent training of staff in charge. Problems are found by checking the implementation of this policy and submission of staff in direction through internal inspection. If so, we will take corrective action immediately. The technical and administrative measures for the protection of the Company's personal information are as fol To prevent infringement of personal information by computer viruses, we Use a vaccine program and prepare for new viruses through periodic updates.",
+      "2) To prevent direct access to personal information, some information cannot be viewed by using the security function of the database.",
+      "3) In preparation for illegal intrusion by hackers through the Internet network, we Use a firewall and intrusion detection system to ensure security.",
+      "4) The right of access to personal information is limited to those in charge of personal information management, such as the person in charge of personal information protection and other persons inevitably handling personal data for business, and other personnel is not permitted to access personal data information.",
+      "5) Personal information and general data are not mixed and managed through a separate account.",
+      "6) Efforts are being made to equip all possible technical devices to systematically secure security."
+    ],
+  },
+  {
+    priTitle: "10. Personal information of children under the age of 14",
+    priText: [
+      "The Company may collect and use the minimum information (personal information of the legal representative) necessary to confirm the legal representative's consent when a child under the age of 14 joins as a member. The Company does not use the collected personal information of the legal representative for any purpose other than checking the consent of the legal representative or providing it to a third party."
+    ],
+  },
+  {
+    priTitle:
+      "11. Rights of users and their legal representatives and how to exercise them",
+    priText: [
+      "Among members' personal information, other than the critical value for personal identification and the information notified in '2. Personal information collection items and collection methods' is managed by the Company by the notice in '4. Provision and sharing of personal information' do."
+    ],
+  },
+  {
+    priTitle:
+      "12. Matters concerning the installation, operation, and rejection of automatic personal information collection devices",
+    priText: [
+      "The Company uses 'cookies' to store and retrieve users' information from time to time to provide customized services specialized to users. A cookie is a small amount of text information sent by the server to operate the website to the user's web browser and is sometimes stored in the device used by the user (PC, smartphone, tablet, etc.",
+      "1) Provision of customized services through cookies",
+      "Purpose of Use of cookies",
+      "- To provide customized information optimized to users by tracking users' usage patterns and traces, such as access frequency and visit time, to identify users' preferences and areas of interest",
+      "Cookie installation, operation, and rejection",
+      "- Users have the option to use cookies and depending on the settings of the web browser, all cookies may be accepted, checked each time a cookie is saved, or all cookies may be rejected.",
+      "- As a method of refusing to set cookies, you can allow all cookies by selecting the option of the web browser used by the user, check each time a cookie is saved, or refuse to keep all cookies.",
+      "However, if you refuse to install cookies, there may be difficulties in using some services.",
+      "2) Log analysis through Google Analytics",
+      "- The Company is analyzing logs using Google Analytics. Users cannot be identified and used only for overall log analysis. Users can opt-out of the Google Analytics collection. (Use 'Block Cookie Settings' or 'Block Google Analytics Browser Add-on)",
+      "3) Analyze service usage records when using the app",
+      "- When using the app, the following information may be collected from the app store or advertiser for smooth and regular service.",
+      "- Google advertising ID, Android ID (Android OS only), device information (model name, OS version, unique identification number)",
+      "- You can refuse to collect advertisement identifiers in the following ways.",
+      "- For Android, [Settings > Google > Ads] or [Settings > General > Account & Sync > Google > Privacy & Privacy > Ad Settings]",
+      "- For iOS [Settings > Privacy > Ads]"
+    ],
+  },
+  {
+    priTitle: "13. Privacy Officer",
+    priText: [
+      "To protect users' personal information and handle complaints related to confidential information, the Company has a person in charge of personal information protection. If you have any questions regarding your personal information, don't hesitate to contact the person in charge of personal information protection or the person in charge of personal information protection below.",
+      "- Privacy Officer",
+      "Name: Su-Ho-Ha",
+      "Affiliation: Surround",
+      "Position: Representative",
+      "Email: kmat0@surroundio.org",
+      "- Personal information protection officer",
+      "Name:",
+      "Affiliation: Security Management Team",
+      "Position: Team leader",
+      "Email: info@surroundio.org",
+      "Please contact the following organizations if you need to report or consult on other personal information infringements.",
+      "- Privacy Infringement Report Center (https://privacy.kisa.or.kr / 118 without area code)",
+      "- Cyber ​​Investigation Division, Supreme Prosecutors' Office (https://www.spo.go.kr / 1301 without area code)",
+      "- National Police Agency Cyber ​​Security Bureau (https://cyberbureau.police.go.kr / 182 without area code)"
+    ],
+  },
+  {
+    priTitle: "14. ADDENDUM",
+    priText: [
+      "This Privacy Policy is effective from September 21, 2022. Suppose there is any addition, deletion, or modification of the contents of this Privacy Policy. In that case, it will be notified through a notice within the Company service at least seven days before the revision. However, when a significant change in user rights occurs, such as a change in the items of personal information to be collected or the purpose of Use, it is notified at least 30 days in advance. Includes.",
+      "- Date of announcement of privacy policy: September 20, 2022",
+      "- Date of enforcement of personal information processing policy: September 21, 2022"
     ],
   },
 ];
