@@ -75,7 +75,7 @@ export default function NavigationBar() {
               <span>Pricing</span>
             </Link>
             <Link
-              href="/community"
+              href="/login"
               className={cls(
                 "flex flex-col items-center space-y-2 ",
                 router.pathname === "/community"
@@ -86,7 +86,7 @@ export default function NavigationBar() {
               <span>Login</span>
             </Link>
             <Link
-              href="/chats"
+              href="/signup"
               className={cls(
                 "flex flex-col items-center space-y-2 ",
                 router.pathname === "/chats"

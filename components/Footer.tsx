@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
 
       <div>
-        <select className="lg:text-lg text-sm pl-3 pr-24 py-3 text-white bg-black border border-white focus:outline-none">
+        <select className="lg:text-lg text-sm pl-5 pr-36 py-3 text-white bg-black border border-white focus:outline-none">
           <option selected>ENGLISH</option>
           <option>한국어</option>
         </select>
