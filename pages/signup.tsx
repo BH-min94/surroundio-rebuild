@@ -21,15 +21,15 @@ export default function Login() {
                             initial={{ opacity: 0, }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.6 }}
-                            className="mt-14 lg:w-[50rem] w-[80vw] mx-auto flex flex-col lg:px-32 gap-5 text-white"
+                            className="mt-14 lg:w-[50rem] mx-auto flex flex-col lg:px-32 gap-5 text-white"
                         >
                             <input type="email" placeholder="Email"
-                                className="px-10 py-5 focus:outline-none focus:bg-[rgba(100,100,100,0.4)] rounded-md bg-[rgba(50,50,50,0.4)] transition lg:text-lg" />
+                                className="px-10 lg:py-5 py-3 focus:outline-none focus:bg-[rgba(100,100,100,0.4)] rounded-md bg-[rgba(50,50,50,0.4)] transition lg:text-lg" />
                             <input type="password" placeholder="Password"
-                                className="px-10 py-5 focus:outline-none focus:bg-[rgba(100,100,100,0.4)] rounded-md bg-[rgba(50,50,50,0.4)] transition lg:text-lg" />
+                                className="px-10 lg:py-5 py-3 focus:outline-none focus:bg-[rgba(100,100,100,0.4)] rounded-md bg-[rgba(50,50,50,0.4)] transition lg:text-lg" />
                             <input type="password" placeholder="Confirm Password"
-                                className="px-10 py-5 focus:outline-none focus:bg-[rgba(100,100,100,0.4)] rounded-md bg-[rgba(50,50,50,0.4)] transition lg:text-lg" />
-                            <button className="px-10 py-5 bg-[#59c6f8] focus:outline-none rounded-md transition hover:bg-blue-400 text-lg">
+                                className="px-10 lg:py-5 py-3 focus:outline-none focus:bg-[rgba(100,100,100,0.4)] rounded-md bg-[rgba(50,50,50,0.4)] transition lg:text-lg" />
+                            <button className="px-10 lg:py-5 py-3 bg-[#59c6f8] focus:outline-none rounded-md transition hover:bg-blue-400 text-lg">
                                 Sign Up
                             </button>
                             <div className="relative mt-8">

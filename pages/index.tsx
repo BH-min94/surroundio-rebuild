@@ -3,9 +3,11 @@ import Head from "next/head";
 import { Steps } from "../components/Steps";
 import Professional from "@/components/Professional";
 
+const banner: string = "https://images.squarespace-cdn.com/content/v1/54d696e5e4b05ca7b54cff5c/4feb4c05-6221-4b48-b80a-dbc1d7f32fb8/6+Tips+To+Speed+Up+Your+Music+Production+Workflow.jpg";
+
 export default function Home() {
   const goEditor = () => {
-    location.href = "https://surroundio.org/wp-login.php";
+    location.href = "/login";
   };
   return (
     <>
@@ -15,7 +17,7 @@ export default function Home() {
       <div
         className="pt-44 pb-44 lg:px-24 px-16 bg-no-repeat bg-cover bg-fixed"
         style={{
-          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://images.squarespace-cdn.com/content/v1/54d696e5e4b05ca7b54cff5c/4feb4c05-6221-4b48-b80a-dbc1d7f32fb8/6+Tips+To+Speed+Up+Your+Music+Production+Workflow.jpg')`,
+          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1) ), url(${banner})`,
         }}
       >
         <motion.div

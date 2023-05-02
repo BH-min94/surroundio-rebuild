@@ -2,6 +2,8 @@ import NavBar from "@/components/NavBar";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
+const professionBanner: string = "https://www.teahub.io/photos/full/5-56857_guitar-wallpapers-hd-hd-wallpapers-download-4k-high.jpg";
+
 interface IPriceList {
   proTitle: string;
   proText: string;
@@ -31,7 +33,7 @@ export default function Professional() {
       <div
         className="p-6 lg:mt-[15rem] mt-[8rem] bg-no-repeat bg-cover bg-fixed"
         style={{
-          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://www.teahub.io/photos/full/5-56857_guitar-wallpapers-hd-hd-wallpapers-download-4k-high.jpg')`,
+          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url(${professionBanner})`,
         }}
       >
         <h1 className="text-white lg:text-6xl text-xl text-center">
