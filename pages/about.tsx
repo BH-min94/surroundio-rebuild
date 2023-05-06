@@ -22,12 +22,12 @@ export default function About() {
               <motion.img
                 whileHover={{ y: -10 }}
                 className="rounded-md"
-                src="https://surroundio.org/wp-content/uploads/2022/07/about-section-img1-e1658228370988.jpg"
+                src="https://surroundio.org/wp-content/uploads/2023/05/about-section-img1-e1658228370988.jpg"
               />
               <motion.img
                 whileHover={{ y: -10 }}
                 className="rounded-md"
-                src="https://surroundio.org/wp-content/uploads/2022/07/about-section-img3.png"
+                src="https://surroundio.org/wp-content/uploads/2023/05/about-section-img3.png"
               />
             </div>
             <motion.div

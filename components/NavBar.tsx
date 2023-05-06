@@ -58,7 +58,7 @@ export default function NavigationBar() {
           <Link href="/">
             <motion.img
               whileHover={{scale: 1.1}}
-              src="https://surroundio.org/wp-content/uploads/2022/09/surround_logo.svg"
+              src="https://surroundio.org/wp-content/uploads/2023/05/surround_logo.png"
               className="lg:w-64 lg:mb-0 w-52 mb-6"
             />
           </Link>
