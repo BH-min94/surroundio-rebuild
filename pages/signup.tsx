@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { terms } from "@/components/Terms";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
@@ -72,7 +71,7 @@ export default function Signup() {
                       message: "Password must be at least 8 chars long.",
                     },
                     validate: {
-                        textCheck: (value) => !value.includes(">" || "<" || "?" || "/") || "( < , > , ? , / ) are not allowed"
+                        textCheck: (value) => !value.includes(">" || "<" || "?" || "/") || "( < , > , ? , / ) are not allowed."
                     }
                   })}
                   autoComplete="off"

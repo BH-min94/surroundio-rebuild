@@ -1,10 +1,8 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { terms } from "@/components/Terms";
 import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import BeforeCheck from "../public/checkbox-passive-svgrepo-com.svg";
 
 interface FormValues {
   email: string;
@@ -17,7 +15,6 @@ export default function Login() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<FormValues>({
     mode: "all",

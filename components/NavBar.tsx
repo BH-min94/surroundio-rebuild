@@ -78,7 +78,7 @@ export default function NavigationBar() {
               href="/login"
               className={cls(
                 "flex flex-col items-center space-y-2 ",
-                router.pathname === "/community"
+                router.pathname === "/login"
                   ? "text-blue-400"
                   : "hover:text-blue-400 transition-colors"
               )}
@@ -89,7 +89,7 @@ export default function NavigationBar() {
               href="/signup"
               className={cls(
                 "flex flex-col items-center space-y-2 ",
-                router.pathname === "/chats"
+                router.pathname === "/signup"
                   ? "text-blue-400"
                   : "hover:text-blue-400 transition-colors"
               )}
