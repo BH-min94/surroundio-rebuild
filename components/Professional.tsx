@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
-const professionBanner: string = "https://www.teahub.io/photos/full/5-56857_guitar-wallpapers-hd-hd-wallpapers-download-4k-high.jpg";
+const professionBanner: string = "https://wallpapercave.com/wp/lwfQm84.jpg";
 
 interface IPriceList {
   proTitle: string;
