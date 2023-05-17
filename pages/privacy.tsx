@@ -8,7 +8,7 @@ export default function Privacy() {
       <Head>
         <title>Surroundio | Privacy</title>
       </Head>
-      <div className="bg-black pt-44 pb-10 lg:px-24 px-16">
+      <div className="bg-black pt-44 pb-10 lg:px-24 px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

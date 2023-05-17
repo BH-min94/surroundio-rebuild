@@ -16,7 +16,7 @@ export default function Home() {
         <title>Surroundio | Home</title>
       </Head>
       <div
-        className="pt-44 pb-44 lg:px-24 px-16 bg-no-repeat bg-cover bg-fixed"
+        className="pt-44 pb-44 lg:px-24 px-8 bg-no-repeat bg-cover bg-fixed"
         style={{
           backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1) ), url(${banner})`,
         }}
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-      <div className="bg-black pt-44 pb-44 lg:px-24 px-16">
+      <div className="bg-black pt-44 pb-44 lg:px-24 px-8">
         <Steps />
         <Professional />
         <div
